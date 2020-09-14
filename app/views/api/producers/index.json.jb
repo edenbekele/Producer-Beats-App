@@ -1,0 +1,7 @@
+@producers.map do |producer|
+  {
+    name: producer.name,
+    description: producer.description,
+    bio: producer.bio,
+  }
+end

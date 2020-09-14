@@ -1,0 +1,7 @@
+@beats.map do |beat|
+  {
+    name: beat.name,
+    description: beat.description,
+    beat: beat.beat,
+  }
+end

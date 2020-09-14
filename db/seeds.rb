@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Producer.create!(name: "Since93", description: "Hip hop beats", bio: "Ben's bio")
+Producer.create!(name: "Looney", description: "Afro-futuristic beats", bio: "Loony's bio")
+
+Beat.create!(name: "NYTimes", description: "Smooth, jazzy", beat: "NYTimes.mp3")
+Beat.create!(name: "Wavy", description: "Futuristic", beat: "Wavy.mp3")
+Beat.create!(name: "Vibes", description: "Lofi", beat: "Vibes.mp3")
