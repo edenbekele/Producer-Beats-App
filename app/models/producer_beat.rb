@@ -1,0 +1,2 @@
+class ProducerBeat < ApplicationRecord
+end
