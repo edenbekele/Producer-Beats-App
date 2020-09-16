@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     get "/beats/:id" => "beats#show"
     post "/beats" => "beats#create"
     patch "/beats/:id" => "beats#update"
+    delete "/beats/:id" => "beats#destroy"
   end
 end

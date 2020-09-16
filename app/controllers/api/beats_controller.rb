@@ -33,4 +33,10 @@ class Api::BeatsController < ApplicationController
       render json: { errors: @beat.errors.full_messages }, status: 422
     end
   end
+
+  def destroy
+    @beat = Beat.find_by(id: params[:id])
+    @beat.destroy
+    render json: { message: "Beat sucessfully destroyed!" }
+  end
 end
