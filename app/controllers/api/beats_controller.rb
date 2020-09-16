@@ -21,4 +21,16 @@ class Api::BeatsController < ApplicationController
       render json: { errors: @beat.errors.full_messages }, status: 422
     end
   end
+
+  def update
+    @beat = Beat.find_by(id: params[:id])
+    @beat.name = params[:name] || @beat.name
+    @beat.description = params[:description] || @beat.description
+    @beat.beat = params[:beat] || @beat.beat
+    if @beat.save
+      render "show.json.jb"
+    else
+      render json: { errors: @beat.errors.full_messages }, status: 422
+    end
+  end
 end

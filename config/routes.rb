@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     get "/beats" => "beats#index"
     get "/beats/:id" => "beats#show"
     post "/beats" => "beats#create"
+    patch "/beats/:id" => "beats#update"
   end
 end
