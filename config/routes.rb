@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
     get "/beats" => "beats#index"
     get "/beats/:id" => "beats#show"
+    post "/beats" => "beats#create"
   end
 end
