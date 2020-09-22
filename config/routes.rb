@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "pages#index"
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
