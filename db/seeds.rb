@@ -9,6 +9,6 @@
 Producer.create!(name: "Since93", description: "Hip hop beats", bio: "Ben's bio")
 Producer.create!(name: "Looney", description: "Afro-futuristic beats", bio: "Loony's bio")
 
-Beat.create!(name: "NYTimes", description: "Smooth, jazzy", beat: "NYTimes.mp3")
-Beat.create!(name: "Wavy", description: "Futuristic", beat: "Wavy.mp3")
-Beat.create!(name: "Vibes", description: "Lofi", beat: "Vibes.mp3")
+Beat.create!(name: "NYTimes", description: "Smooth, jazzy", mp3_file: "NYTimes.mp3")
+Beat.create!(name: "Wavy", description: "Futuristic", mp3_file: "Wavy.mp3")
+Beat.create!(name: "Vibes", description: "Lofi", mp3_file: "Vibes.mp3")

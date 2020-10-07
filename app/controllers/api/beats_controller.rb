@@ -13,7 +13,7 @@ class Api::BeatsController < ApplicationController
     @beat = Beat.new(
       name: params[:name],
       description: params[:description],
-      beat: params[:beat],
+      mp3_file: params[:mp3_file],
     )
     if @beat.save
       render "show.json.jb"
@@ -26,7 +26,7 @@ class Api::BeatsController < ApplicationController
     @beat = Beat.find_by(id: params[:id])
     @beat.name = params[:name] || @beat.name
     @beat.description = params[:description] || @beat.description
-    @beat.beat = params[:beat] || @beat.beat
+    @beat.beat = params[:mp3_file] || @beat.beat
     if @beat.save
       render "show.json.jb"
     else

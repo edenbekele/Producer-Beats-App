@@ -2,6 +2,6 @@
   {
     name: beat.name,
     description: beat.description,
-    beat: beat.beat,
+    mp3_file: beat.mp3_file,
   }
 end
